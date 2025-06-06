@@ -3,12 +3,11 @@ name: CI/CD for todo app
 on: push
 
 jobs:
-   run-todo:
+  run-todo:
     runs-on: ubuntu-latest
     steps:
-     -uses: actions/checkout@v3
-     -name : run python script
-     run: |
-        python3 todo.py <<EOF
-5
-EOF 
+      - uses: actions/checkout@v3
+
+      - name: Run python script
+        run: |
+          echo "5" | python3 todo.py
