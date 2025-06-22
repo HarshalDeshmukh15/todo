@@ -19,7 +19,7 @@ def view_task():
         print("No tasks yet.")
     for i, t in enumerate(tasks, 1):
         status = "✔" if t["done"] else "❌"
-        print(f"{i}. {t['task']} [{status}]"
+        print(f"{i}. {t['task']} [{status}]")
 
 def mark_done():
     
